@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Eee</title>
+</head>
+<body>
+  <div id="video-bg">
+    <video width="100%" height="auto" muted="muted" preload="auto" autoplay="autoplay"
+    loop="loop" poster="photo.png">
+    <source src="resources/video.mp4" type="video/mp4"></source>
+    <source src="resources/video.webm" type="video/webm"></source>
+  </video>
+</div>
+
+<div class="outer">
+  <div class="inner" id="play">
+    <img src="resources/photo.png"/>
+
+    <audio id="play-audio">
+      <source src="resources/e.ogg" type="audio/ogg"/>
+      <source src="resources/e.mp3" type="audio/mpeg"/>
+    </audio>
+
+    <script>
+      var pocik = document.getElementById('play'),
+      pocikAudio = document.getElementById('play-audio');
+      pocik.addEventListener('click', fPlay, false);
+      function fPlay() {
+        pocikAudio.play();
+      }
+    </script>
+
+    <table>
+      <tr>
+        <th colspan="1">ФИО</th>
+        <td colspan="4">Бунтарь Афанасий Игнатьевич</td>
+      </tr>
+      <tr>
+        <th colspan="1">Город</th>
+        <td colspan="4">Москва</td>
+      </tr>
+      <tr>
+        <th colspan="1">Дата Рождения</th>
+        <td colspan="4">01.11.1991</td>
+      </tr>
+      <tr>
+        <th colspan="1">Телефон</th>
+        <td colspan="4">+7 (800) 555-35-35</td>
+      </tr>
+      <tr>
+        <th colspan="1">Почта</th>
+        <td colspan="4">mymail@mail.ru</td>
+      </tr>
+      <tr>
+        <th colspan="5" class="th-full-string">О себе</th>
+      </tr>
+      <tr>
+        <td colspan="5">Для кого-то я СОЛНЫШКО. Для кого-то я СОЛНЕЧНЫЙ УДАР. А кому- то вообще НЕ СВЕТИТ</td>
+      </tr>
+      <tr>
+        <th colspan="5" class="th-full-string">Мое расписание</th>
+      </tr>
+      <tr>
+        <th class="th-monday">Понедельник</th>
+        <th class="th-tuesday">Вторник</th>
+        <th class="th-wednesday">Среда</th>
+        <th class="th-thursday">Четверг</th>
+        <th class="th-friday">Пятница</th>
+      </tr>
+      <tr>
+        <td class="td-last">8:30 - 15:50</td>
+        <td class="td-last">10:10 - 14:00</td>
+        <td class="td-last">Выходной</td>
+        <td class="td-last">14:10 - 15:50</td>
+        <td class="td-last">8:30 - 10:10</td>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>
